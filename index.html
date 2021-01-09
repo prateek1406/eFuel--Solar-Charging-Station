@@ -454,7 +454,7 @@ html {
                 </div>
             </div>
             <div class="col-lg-6 col-xs-12">
-                <form style="padding:10px 10px;" name="form" onsubmit="sendQuery()" method="POST">
+                <form style="padding:10px 10px;" name="form"  method="POST">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Enter name</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
@@ -471,7 +471,7 @@ html {
                         <label for="exampleFormControlTextarea1">Message</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="background-color:#5CAD2F;border-radius:10px;">Submit</button>
+                    <button type="submit" onclick="sendQuery()" class="btn btn-primary" style="background-color:#5CAD2F;border-radius:10px;">Submit</button>
                   </form>
             </div>
         </div>
