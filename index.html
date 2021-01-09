@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="owl.carousel.min.css">
 <link rel="stylesheet" href="owl.theme.default.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300&display=swap" rel="stylesheet">
-         
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">       
 <style>
 body
 {
@@ -78,7 +78,7 @@ html {
     position:fixed;
     width:100%;
     height:100vh;
-    background: #fff url('img/Wedges-3s-200px.gif') center no-repeat;
+    background: #fff url('img/status.gif') center no-repeat;
     z-index:9999;
 
     
@@ -115,6 +115,47 @@ html {
 {
     font-size:30px;
     font-weight:bold;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  /* margin-left:20px; */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
  @media (max-width: 972.98px) {
  
@@ -172,14 +213,13 @@ html {
 <div class="navbar-fixed" style="position:fixed;top:0;width:100%;font-family: 'Poppins', sans-serif;">
     <nav style="width:100%;height:100px;box-shadow:1px solid white;background-color:white;">
         <div class="nav-wrapper">
-            <a href="https://www.salonatdoorstep.in/" class="brand-logo left"><img src="img/logo.png" class="logo" alt="logo" style="width:190px;height:80px;padding-top:20px;padding-left:20px;" /></a>
+            <a href="https://www.salonatdoorstep.in/" class="brand-logo left"><img src="img/logo.png" class="logo" alt="logo" style="width:180px;height:80px;padding-top:20px;padding-left:20px;" /></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons"><i class="lni-menu" style="color:#5CAD2F;text-align:center;font-size:40px;padding-right:20px;padding-top:20px;"></i></a>
             <ul class="right hide-on-med-and-down" style="padding-top:20px;padding-left:20px;text-decoration:none;">
                 <li><a href="#top" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">Home</a></li>
                 <li><a href="#about" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">About Us</a></li>
                 <li><a href="#offerings" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">Goals</a></li>
                 <li><a href="#services1" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">Services</a></li>
-                <li><a href="#footer" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">Our Team</a></li>
                 <li><a href="#footer" style="color:#5CAD2F;margin-right:25px;font-size:20px;font-style:normal;">Contact</a></li>
             </ul>
         </div>
@@ -223,7 +263,8 @@ html {
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div style="color:black;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean. Ultrices eros in cursus turpis massa tincidunt dui. Dignissim convallis aenean et tortor at risus viverra. In ornare quam viverra orci sagittis eu volutpat. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Quis imperdiet massa tincidunt nunc pulvinar sapien. Sed libero enim sed faucibus. Tellus elementum sagittis vitae et leo duis ut diam quam. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Lorem donec massa sapien faucibus. Posuere ac ut consequat semper viverra nam. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Amet mattis vulputate enim nulla aliquet. Quam id leo in vitae turpis massa. Gravida rutrum quisque non tellus orci ac.</div>
+            <div style="color:black;font-size:20px;padding:20px;letter-spacing:2px;font-family: 'Source Sans Pro', sans-serif;">Over the decades, the rise in population has led to the rise in the demand for more vehicles each passing day. And as the consumers ride along in their vehicle, it has increased the pollution as well. This brought in the need for electric vehicles. Now, these electric vehicles are not only affordable for our pockets but also sustainable to the environment in the long run. 
+                With ever-changing technology, the world has evolved accordingly. Energy and transport are interconnected. Soon enough, electric vehicles would become the new normal</div>
         </div>
     </div>
 </div>
@@ -233,7 +274,7 @@ html {
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div style="color:black;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean. Ultrices eros in cursus turpis massa tincidunt dui. Dignissim convallis aenean et tortor at risus viverra. In ornare quam viverra orci sagittis eu volutpat. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Quis imperdiet massa tincidunt nunc pulvinar sapien. Sed libero enim sed faucibus. Tellus elementum sagittis vitae et leo duis ut diam quam. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Lorem donec massa sapien faucibus. Posuere ac ut consequat semper viverra nam. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Amet mattis vulputate enim nulla aliquet. Quam id leo in vitae turpis massa. Gravida rutrum quisque non tellus orci ac.</div>
+            <div style="color:black;font-size:20px;text-align:center;padding:20px;letter-spacing:2px;font-family: 'Source Sans Pro', sans-serif;">Learning about the drawbacks and lack of proper infrastructure for electric vehicles, our CEO Aditya Mishra became determined to make the world a better place to live in, even if it was by the effort of making a business plan that will be beneficial overall. EV Solar works on Solar energy. We as an EV charging station company have a goal to build infrastructure for the need for electric vehicles at different places across India. The key point of the plan to work is Solar energy. Unlike fossil fuels, that is the energy resource that we will not get enough of. We envision to build these fast-charging stations by the first quarter of 2023.</div>
         </div>
     </div>
 </div>
@@ -349,7 +390,7 @@ html {
     </div>
 </div>
 </section>
-<section style="font-style:normal;margin-top:50px;color:#5CAD2F">
+<!-- <section style="font-style:normal;margin-top:50px;color:#5CAD2F">
     <div class="col-12"><div style="text-align:center;font-size:40px;">Our Team</div></div>
     <div class="container-fluid">
         <div class="row">
@@ -391,7 +432,7 @@ html {
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section style="font-style:normal;padding:3% 3%;">
     <div class="container-fluid">
         <div class="row">
@@ -433,6 +474,86 @@ html {
     </div>
 </section>
                                             <!--FOOTER-->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-12" style="margin-top:50px;"></div>
+            <div class="col-lg-2 col-xs-12"></div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>John Doe</h1> 
+                        <p>Architect & Engineer</p> 
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-2 col-xs-12"></div>
+        </div>
+    </div>
+</section>
+
 <div class="container-fluid" id="footer" style="background-color:#242430;color:white;position: absolute;font-style:normal;">
     <div class="row">
         <div class="col-12">
@@ -442,7 +563,7 @@ html {
            <a class="social_icon" href="https://www.facebook.com/Salon-at-DoorStep-105183794613011/" target="_blank"><i class="fab fa-facebook-f" style="padding:15px 10px;"></i></a>
            <a class="social_icon" href="https://instagram.com/salon_at_doorstep?igshid=1qjwzf07vbjcv" target="_blank"><i class="fab fa-instagram" style="padding:15px 10px;"></i></a>
            <a class="social_icon" href="https://www.linkedin.com/company/salon-at-doorstep/" target="_blank"><i class="fab fa-linkedin-in" style="padding:15px 10px;"></i></a>
-           <a class="social_icon" href="https://twitter.com/Salonnathome?s=08" target="_blank"><i class="fab fa-twitter" style="padding:15px 10px;"></i></a>
+           <a class="social_icon" href="https://twitter.com/Salonnathome?s=08" target="_blank"><i class="fas fa-envelope" style="padding:15px 10px;"></i></a>
         </div>
         <div class="col-12"><div style="color:#777777;text-align:center;font-size:15px;margin-top:25px;"><i class="far fa-copyright" aria-hidden="true"></i><span style="margin-left:5px;">eFuel PVT LTD. All Rights Reserved</span></div></div>
      </div>
@@ -454,9 +575,19 @@ var instances = M.Sidenav.init(elems, {edge:'right'});
 });
     
 </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
 
-
-
+Email.send({
+    SecureToken : "fb21957f-d643-48ac-b532-b245c9ffa2f4",
+    To : 'prateek.agarwal2017@vitstudent.ac.in',
+    From : "prateek15jun@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  
+);
+</script>
 <script src="js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
