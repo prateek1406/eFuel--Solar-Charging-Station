@@ -450,22 +450,22 @@ html {
                 </div>
             </div>
             <div class="col-lg-6 col-xs-12">
-                <form style="padding:10px 10px;">
+                <form style="padding:10px 10px;" name="form" onsubmit="sendQuery()">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Enter name</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Enter email</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" class="form-control"  name="email"id="exampleInputPassword1">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Your Phone</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="password" class="form-control"  name="phone" id="exampleInputPassword1">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="background-color:#5CAD2F;border-radius:10px;">Submit</button>
                   </form>
@@ -577,16 +577,23 @@ var instances = M.Sidenav.init(elems, {edge:'right'});
 </script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-
-Email.send({
+ function sendQuery() 
+ {
+     var email=document.forms["form"]["email"].value;
+     var phone=document.forms["form"]["phone"].value;
+     var name=document.forms["form"]["name"].value;
+     var message=document.forms["form"]["message"].value;
+     Email.send({
     SecureToken : "fb21957f-d643-48ac-b532-b245c9ffa2f4",
     To : 'prateek.agarwal2017@vitstudent.ac.in',
     From : "prateek15jun@gmail.com",
     Subject : "This is the subject",
-    Body : "And this is the body"
+    Body : email + " " + phone
 }).then(
   
 );
+ }
+
 </script>
 <script src="js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
